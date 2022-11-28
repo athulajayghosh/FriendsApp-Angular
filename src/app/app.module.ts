@@ -5,17 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
 import { RouterModule, Routes } from '@angular/router';
+import { SearchFriendComponent } from './search-friend/search-friend.component';
 
 const myRoute: Routes=[
   {path:"",
   component:AddFriendComponent
+  },
+  {path:"search",
+  component:SearchFriendComponent
   }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddFriendComponent
+    AddFriendComponent,
+    SearchFriendComponent
   ],
   imports: [
     BrowserModule,
