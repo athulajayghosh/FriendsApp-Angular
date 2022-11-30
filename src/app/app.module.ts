@@ -8,6 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { SearchFriendComponent } from './search-friend/search-friend.component';
 import { ViewFriendComponent } from './view-friend/view-friend.component';
 import { NavComponent } from './nav/nav.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 const myRoute: Routes=[
   {path:"",
@@ -32,7 +34,9 @@ const myRoute: Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
